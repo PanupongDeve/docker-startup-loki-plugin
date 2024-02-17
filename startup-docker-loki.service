@@ -1,0 +1,8 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=docker plugin enable loki
+
+[Install]
+WantedBy=default.target
